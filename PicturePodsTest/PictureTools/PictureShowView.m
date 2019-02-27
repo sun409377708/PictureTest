@@ -19,6 +19,7 @@
     
     [self addSubview:self.imgView];
     self.imgView.center = self.center;
+    NSBundle *bundle = [NSBundle bundleWithPath:@"PNGResource.bundle"];
     
 }
 
