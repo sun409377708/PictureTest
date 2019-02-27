@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "SJQPictureTool"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "SJQPictureTool测试"
 
 
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
 
 
-  s.source_files  = "PicturePodsTest/PictureTools/*.{h,m}"
+  s.source_files  = "PicturePodsTest/PictureTools/*.{h,m,png,bundle}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
