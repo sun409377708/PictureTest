@@ -13,6 +13,8 @@
 		771E9CD822266A5B004C0313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771E9CD722266A5B004C0313 /* Assets.xcassets */; };
 		771E9CDB22266A5C004C0313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771E9CD922266A5C004C0313 /* LaunchScreen.storyboard */; };
 		771E9CDE22266A5C004C0313 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 771E9CDD22266A5C004C0313 /* main.m */; };
+		779E54F92226702800DADC68 /* PictureShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779E54F82226702800DADC68 /* PictureShowView.m */; };
+		779E54FD222670D600DADC68 /* PictureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 779E54FC222670D600DADC68 /* PictureHandler.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		771E9CDA22266A5C004C0313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		771E9CDC22266A5C004C0313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		771E9CDD22266A5C004C0313 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		779E54F72226702800DADC68 /* PictureShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureShowView.h; sourceTree = "<group>"; };
+		779E54F82226702800DADC68 /* PictureShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureShowView.m; sourceTree = "<group>"; };
+		779E54FB222670D600DADC68 /* PictureHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureHandler.h; sourceTree = "<group>"; };
+		779E54FC222670D600DADC68 /* PictureHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureHandler.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +73,20 @@
 				771E9CD922266A5C004C0313 /* LaunchScreen.storyboard */,
 				771E9CDC22266A5C004C0313 /* Info.plist */,
 				771E9CDD22266A5C004C0313 /* main.m */,
+				779E54FA222670B300DADC68 /* PictureTools */,
 			);
 			path = PicturePodsTest;
+			sourceTree = "<group>";
+		};
+		779E54FA222670B300DADC68 /* PictureTools */ = {
+			isa = PBXGroup;
+			children = (
+				779E54F72226702800DADC68 /* PictureShowView.h */,
+				779E54F82226702800DADC68 /* PictureShowView.m */,
+				779E54FB222670D600DADC68 /* PictureHandler.h */,
+				779E54FC222670D600DADC68 /* PictureHandler.m */,
+			);
+			path = PictureTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				779E54F92226702800DADC68 /* PictureShowView.m in Sources */,
 				771E9CD322266A5B004C0313 /* ViewController.m in Sources */,
+				779E54FD222670D600DADC68 /* PictureHandler.m in Sources */,
 				771E9CDE22266A5C004C0313 /* main.m in Sources */,
 				771E9CD022266A5B004C0313 /* AppDelegate.m in Sources */,
 			);
@@ -285,15 +305,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = L3TXV22669;
 				INFOPLIST_FILE = PicturePodsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dytDoctor.PicturePodsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = all_dev;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -301,15 +324,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = L3TXV22669;
 				INFOPLIST_FILE = PicturePodsTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.dytDoctor.PicturePodsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PROVISIONING_PROFILE_SPECIFIER = all_dev;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
