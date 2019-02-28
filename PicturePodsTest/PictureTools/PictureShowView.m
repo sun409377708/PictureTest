@@ -19,8 +19,16 @@
     
     [self addSubview:self.imgView];
     self.imgView.center = self.center;
-    NSBundle *bundle = [NSBundle bundleWithPath:@"PNGResource.bundle"];
     
+    NSString *bundlePath = [[ NSBundle mainBundle] pathForResource: @ "SVProgressHUD" ofType :@"bundle"];
+    
+    NSBundle *resourceBundle = [NSBundle bundleWithPath:bundlePath];
+
+    UIImage *image = [UIImage imageWithContentsOfFile:[resourceBundle pathForResource:@"info" ofType:@"png"]];
+    
+    NSLog(@"%@", image);
+    [self.imgView setImage:image];
+    [self.imgView sizeToFit];
 }
 
 #pragma mark  - lazyLoad

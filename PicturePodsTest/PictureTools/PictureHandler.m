@@ -7,11 +7,16 @@
 //
 
 #import "PictureHandler.h"
+#import "PictureShowView.h"
 
 @implementation PictureHandler
 
-+ (void)logSomething {
-    NSLog(@"something");
++ (void)loadImageWithController:(UIViewController *)controller {
+    PictureShowView *pView = [[PictureShowView alloc] init];
+    pView.frame = [UIScreen mainScreen].bounds;
+    [pView addPicture];
+    
+    [controller.view addSubview:pView];
 }
 
 @end

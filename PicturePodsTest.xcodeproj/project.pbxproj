@@ -13,7 +13,7 @@
 		771E9CD822266A5B004C0313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771E9CD722266A5B004C0313 /* Assets.xcassets */; };
 		771E9CDB22266A5C004C0313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 771E9CD922266A5C004C0313 /* LaunchScreen.storyboard */; };
 		771E9CDE22266A5C004C0313 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 771E9CDD22266A5C004C0313 /* main.m */; };
-		77962D64222693EF0026612D /* 123.png in Resources */ = {isa = PBXBuildFile; fileRef = 77962D63222693EF0026612D /* 123.png */; };
+		77962D66222697080026612D /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 77962D65222697080026612D /* SVProgressHUD.bundle */; };
 		779E54F92226702800DADC68 /* PictureShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 779E54F82226702800DADC68 /* PictureShowView.m */; };
 		779E54FD222670D600DADC68 /* PictureHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 779E54FC222670D600DADC68 /* PictureHandler.m */; };
 /* End PBXBuildFile section */
@@ -29,7 +29,7 @@
 		771E9CDA22266A5C004C0313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		771E9CDC22266A5C004C0313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		771E9CDD22266A5C004C0313 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		77962D63222693EF0026612D /* 123.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 123.png; sourceTree = "<group>"; };
+		77962D65222697080026612D /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
 		779E54F72226702800DADC68 /* PictureShowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureShowView.h; sourceTree = "<group>"; };
 		779E54F82226702800DADC68 /* PictureShowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictureShowView.m; sourceTree = "<group>"; };
 		779E54FB222670D600DADC68 /* PictureHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PictureHandler.h; sourceTree = "<group>"; };
@@ -83,7 +83,7 @@
 		779E54FA222670B300DADC68 /* PictureTools */ = {
 			isa = PBXGroup;
 			children = (
-				77962D63222693EF0026612D /* 123.png */,
+				77962D65222697080026612D /* SVProgressHUD.bundle */,
 				779E54F72226702800DADC68 /* PictureShowView.h */,
 				779E54F82226702800DADC68 /* PictureShowView.m */,
 				779E54FB222670D600DADC68 /* PictureHandler.h */,
@@ -149,7 +149,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77962D64222693EF0026612D /* 123.png in Resources */,
+				77962D66222697080026612D /* SVProgressHUD.bundle in Resources */,
 				771E9CDB22266A5C004C0313 /* LaunchScreen.storyboard in Resources */,
 				771E9CD822266A5B004C0313 /* Assets.xcassets in Resources */,
 				771E9CD622266A5B004C0313 /* Main.storyboard in Resources */,
